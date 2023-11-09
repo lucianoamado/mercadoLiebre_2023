@@ -67,13 +67,12 @@ body{
     }
 
     .buscador {
-      background-color: white;
-      border: solid white;
-      border-radius: 0.3rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: black;
+        background-color: white;
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
     }
     .lupa{
         display: inline;
@@ -264,12 +263,17 @@ body{
 
     /* imagenes  */
     div.logo{
-        width: 30%;
+        width: 20%;
    }
 
    div.barra-busqueda{
-        width: 30%;
+        width: 38%;
+        font-size: 1.7rem;
    }
+
+   input:focus{
+    outline: solid #ebebeb;
+}
    
     img.banner{
        width: 100vw;
@@ -284,12 +288,12 @@ body{
      }
      nav.main-navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-bottom: 10px;
-        font-size: 80%;
+        font-size: 0.8rem;
         }
 
-        .main-navbar ul{
+     .main-navbar ul{
             display: flex;
             padding-bottom: 10px;
             list-style: none;
@@ -303,6 +307,11 @@ body{
         color: black;
         padding-left: 10px;
     } 
+
+    .main-navbar a:hover{
+        color: #1259c3;
+    }
+    
         .main-navbar a i{
             display: flex;
             align-items: center;
@@ -383,14 +392,14 @@ body{
         font-size: 14px;
       }
 
-      button{
+      /* button{
         background-color: #1259c3;
         border-radius: 10px;
         color: white;
         padding: 9px;
         cursor: pointer;
         font-size: 100%;
-      }
+      } */
    
 
 
@@ -399,9 +408,7 @@ body{
 @media (min-width: 992px) {
     /* Desktop */
 
-    .logo{
-         width: 20%;
-    }
+
     .banner{
         width: 100vw;
     }
@@ -412,7 +419,7 @@ body{
 
     /* navbar */
     nav.main-navbar{
-        font-size: 100%;
+        font-size: 1.1rem;
     }
     .main-navbar li{
         text-decoration: none;
@@ -515,7 +522,7 @@ body{
         font-size: 14px;
       }
 
-      button{
+      /* button{
         margin-top: 20px;
         background-color: #1259c3;
         border-radius: 10px;
@@ -523,7 +530,7 @@ body{
         padding: 9px;
         cursor: pointer;
         font-size: 25px;
-      }
+      } */
 
       button a {
         text-decoration: none;
