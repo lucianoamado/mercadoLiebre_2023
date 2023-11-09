@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express")
 const path = require("path")
 const app = express()
@@ -5,7 +7,9 @@ const pathStatic = path.resolve(__dirname,"./public")
 
 app.use(express.static(pathStatic))
 
-app.listen(3500,()=>console.log("Servidor corriendo en el puerto 3500"))
+const port = process.env.PORT || 4000
+
+app.listen(port,()=>console.log(`Servidor corriendo en el puerto ${port}`))
 
 app.get("/",(req,res)=>{
     res.sendFile(path.resolve("./views/home.html"))
